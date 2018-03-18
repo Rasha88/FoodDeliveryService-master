@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_selected_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/selected_item_list"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="com.example.android.fooddeliveryservice.SelectedItemsActivity">
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_weight="0"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:background="#d3d3d3">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                tools:text="Item Name" />
+
+            <TextView
+                android:id="@+id/item_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                tools:text="$5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/increment_quantity_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#a0a0a0"
+                    android:textColor="#fff"
+                    android:text="+"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    tools:text="0"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/decrement_quantity_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#a0a0a0"
+                    android:textColor="#fff"
+                    android:text="-"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+         </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/remove_item_btn"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/remove"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true" />
+
+</LinearLayout>

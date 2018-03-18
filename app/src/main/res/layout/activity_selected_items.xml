@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_selected_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.android.fooddeliveryservice.SelectedItemsActivity">
+
+    <ListView
+        android:id="@+id/list_selected_items"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/top_border">
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="Total : $0.0"/>
+        <TextView
+            android:id="@+id/total_items"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="Items : 0"/>
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="0">
+         <Button
+             android:layout_width="1dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Add more item"
+             android:background="@color/btn_background"
+             android:layout_marginRight="4dp"
+             android:textColor="#fff" />
+         <Button
+             android:layout_width="1dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Complete"
+             android:background="@color/btn_background"
+             android:layout_marginLeft="4dp"
+             android:textColor="#fff"/>
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e91e63</color>
+    <color name="colorPrimaryDark">#c2185b</color>
+    <color name="colorAccent">#322e2e</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFFFFF</color>
+
+    <!-- Background color for Button -->
+    <color name="btn_background">#322e2e</color>
+
+    <!-- Background color for the checked Grid Item -->
+    <color name="checked_item_grid">#eae2e2e2</color>
+
+    <!-- Background color for the Grid Item -->
+    <color name="item_grid">#f2f2f2</color>
+
+    <!-- Background color for the selected item list -->
+    <color name="selected_item_list">#f0f0f0</color>
+
+    <!-- Background color for the price view -->
+    <color name="price_bg_color">#e5ebc702</color>
+
+</resources>
